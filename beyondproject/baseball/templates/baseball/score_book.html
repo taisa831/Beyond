@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<style type="text/css">
+    ul.example li {
+        float: left;
+        width: 8em;
+        margin-right: 5px;
+        padding: 2px;
+        border: 1px #ffb366 solid;
+        background-color: #fffdee;
+        text-align: center;
+    }
+</style>
+<body>
+<ul class="example">
+    <li>score</li>
+    {% for top_score in top_scores %}
+        <li>{{ top_score.inning }}回</li>
+    {% endfor %}
+    <li>計</li>
+</ul>
+<br>
+<ul class="example">
+    <li>{{ game.top_team_name }}</li>
+    {% for top_score in top_scores %}
+        <li>{{ top_score.score }}</li>
+    {% endfor %}
+        <li>{{ 15 }}</li>
+</ul>
+<br>
+<ul class="example">
+    <li>{{ game.bottom_team_name }}</li>
+    {% for bottom_score in bottom_scores %}
+        <li>{{ bottom_score.score }}</li>
+    {% endfor %}
+    <li>2</li>
+</ul>
+
+</body>
+</html>
