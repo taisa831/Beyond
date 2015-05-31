@@ -17,24 +17,24 @@
 <body>
 <ul class="example">
     <li>score</li>
-    {% for top_score in top_scores %}
-        <li>{{ top_score.inning }}回</li>
+    {% for team_game_inning in team_game_innings %}
+        <li>{{ team_game_inning.inning }}回</li>
     {% endfor %}
     <li>計</li>
 </ul>
 <br>
 <ul class="example">
-    <li>{{ game.top_team_name }}</li>
-    {% for top_score in top_scores %}
-        <li>{{ top_score.score }}</li>
+    <li>{{ team_game.first_half_team_name }}</li>
+    {% for first_half_score in first_half_scores %}
+        <li>{{ first_half_score.score }}</li>
     {% endfor %}
         <li>{{ 15 }}</li>
 </ul>
 <br>
 <ul class="example">
-    <li>{{ game.bottom_team_name }}</li>
-    {% for bottom_score in bottom_scores %}
-        <li>{{ bottom_score.score }}</li>
+    <li>{{ team_game.second_half_team_name }}</li>
+    {% for second_half_score in second_half_scores %}
+        <li>{{ second_half_score.score }}</li>
     {% endfor %}
     <li>2</li>
 </ul>
