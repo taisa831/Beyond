@@ -12,7 +12,7 @@ class TeamAdminUsers(models.Model):
     updated_at = models.DateTimeField()
 
     class Meta:
-        managed = False
+        managed = True
         db_table = 'team_admin_users'
 
 
@@ -25,7 +25,7 @@ class TeamGameFirstHalfScores(models.Model):
     updated_at = models.DateTimeField()
 
     class Meta:
-        managed = False
+        managed = True
         db_table = 'team_game_first_half_scores'
 
 
@@ -38,7 +38,7 @@ class TeamGameInnings(models.Model):
     updated_at = models.DateTimeField()
 
     class Meta:
-        managed = False
+        managed = True
         db_table = 'team_game_innings'
 
 
@@ -53,7 +53,7 @@ class TeamGamePlayerScores(models.Model):
     updated_at = models.DateTimeField()
 
     class Meta:
-        managed = False
+        managed = True
         db_table = 'team_game_player_scores'
 
 
@@ -67,7 +67,7 @@ class TeamGamePlayers(models.Model):
     updated_at = models.DateTimeField()
 
     class Meta:
-        managed = False
+        managed = True
         db_table = 'team_game_players'
 
 
@@ -81,7 +81,7 @@ class TeamGameSecondHalfScores(models.Model):
     updated_at = models.DateTimeField()
 
     class Meta:
-        managed = False
+        managed = True
         db_table = 'team_game_second_half_scores'
 
 
@@ -96,7 +96,7 @@ class TeamGames(models.Model):
     updated_at = models.CharField(max_length=255)
 
     class Meta:
-        managed = False
+        managed = True
         db_table = 'team_games'
 
 
@@ -109,7 +109,7 @@ class TeamPlayers(models.Model):
     updated_at = models.DateTimeField()
 
     class Meta:
-        managed = False
+        managed = True
         db_table = 'team_players'
 
 
@@ -121,5 +121,5 @@ class Teams(models.Model):
     updated_at = models.DateTimeField()
 
     class Meta:
-        managed = False
+        managed = True
         db_table = 'teams'
